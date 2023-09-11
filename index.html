@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo de Canvas</title>
+    <style>
+        body {
+            padding:0;
+            margin:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #bloqueo{
+            position:absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            display:none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color:rgba(0,0,0,0.8);
+        }
+
+        button {
+            background-color:#cf0000;
+            color: #fff;
+            padding:10px 20px;
+            font-size:25px;
+            font-weight: bold;
+            border:0;
+        }
+
+        p{
+            color:#fff;
+            font-size:30px;
+            font-weight:bold;
+            text-align:center;
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloqueo">
+        <p id="mensaje"></p>
+        <button type="button" id="btnJugar">VOLVER A JUGAR</button>
+    </div>
+    <canvas id="lienzo" width="800" height="600"></canvas>
+    <script src="bloque.js" type="module"></script>
+    <script src="bloques.js" type="module"></script>
+    <script src="paleta.js" type="module"></script>
+    <script src="pelota.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
